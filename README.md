@@ -37,14 +37,14 @@ Está diseñada para ser consumida por un frontend o integraciones que requieran
 1. Crea y activa el entorno virtual:
 
 ```powershell
-python -m venv venv
-.\venv\Scripts\Activate.ps1
+python -m venv venv                    --- primer comando despues del clone ("ya ejecutado")
+.\venv\Scripts\Activate.ps1            --- activar entorno virtual  ("ya ejecutado") 
 ```
 
 2. Instala dependencias:
 
 ```powershell
-pip install -r requirements.txt
+pip install -r requirements.txt        --- Instalar librerias  ("ya esta ejecutado")
 ```
 
 3. Configura las variables de entorno en un archivo `.env` en la raíz del proyecto:
