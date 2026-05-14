@@ -10,7 +10,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Dispatch Management API", version="1.0")
 
-allowed_origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173")
+allowed_origins = os.getenv("ALLOWED_ORIGINS", "*")
 if isinstance(allowed_origins, str):
     allowed_origins = [origin.strip() for origin in allowed_origins.split(",") if origin.strip()]
 
